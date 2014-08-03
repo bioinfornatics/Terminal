@@ -1,0 +1,429 @@
+/* =================== terminal style =================== */
+/* FINDER WINDOW */
+.terminalWindow {
+	position: relative;
+	width: 90%;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	min-width: 500px;
+	background: #fff;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0 0 20px rgba(0,0,0,0.75);
+/*-webkit-transition:all 0.5s; */
+	overflow: hidden;
+}
+
+/* TOP BAR */
+.terminalToolbar {
+	width: 100%;
+	height: 25px;
+	background: grey;
+	border-radius: 5px 5px 0 0;
+	background: #cfcfcf;
+/* Old browsers */
+	background: -moz-linear-gradient(top,#cfcfcf 0%,#a8a8a8 100%);
+/* FF3.6+ */
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#cfcfcf),color-stop(100%,#a8a8a8));
+/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,#cfcfcf 0%,#a8a8a8 100%);
+/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,#cfcfcf 0%,#a8a8a8 100%);
+/* Opera 11.10+ */
+	background: -ms-linear-gradient(top,#cfcfcf 0%,#a8a8a8 100%);
+/* IE10+ */
+	background: linear-gradient(top,#cfcfcf 0%,#a8a8a8 100%);
+/* W3C */
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset, 0 1px 0 #515151;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset, 0 1px 0 #515151;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset, 0 1px 0 #515151;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.terminalToolbar .terminalTop {
+	float: left;
+	width: 100%;
+	height: 23px;
+}
+
+.terminalToolbar .bottom {
+	float: left;
+	width: 100%;
+	height: 30px;
+}
+
+/*-----TRAFFIC LIGHTS-----*/
+.terminalToolbar .terminalLights {
+	float: left;
+	position: relative;
+	top: 4px;
+	left: 7px;
+}
+
+.terminalLight {
+	float: left;
+	width: 14px;
+	height: 14px;
+	border-radius: 14px;
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.5), 0 0 3px #000 inset;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.5), 0 0 3px #000 inset;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.5), 0 0 3px #000 inset;
+	overflow: hidden;
+}
+
+.terminalLights:hover .terminalGliph {
+	opacity: 1;
+	cursor: default;
+}
+
+.terminalLight .terminalShine {
+	width: 4px;
+	height: 3px;
+	border-radius: 10px;
+/*background-image: -webkit-gradient(radial, center center, 0, center center, 3, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)));*/
+	background: -moz-radial-gradient(center,ellipse cover,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+/* FF3.6+ */
+	background-image: -webkit-gradient(radial,center center,0px,center center,100%,color-stop(0%,rgba(255,255,255,1)),color-stop(100%,rgba(255,255,255,0)));
+/* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center,ellipse cover,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+/* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center,ellipse cover,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+/* Opera 12+ */
+	background: -ms-radial-gradient(center,ellipse cover,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+/* IE10+ */
+	background: radial-gradient(center,ellipse cover,rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+/* W3C */
+}
+
+.terminalLight .terminalGlow {
+	width: 14px;
+	height: 8px;
+	background-image: -webkit-gradient(radial,center bottom,0,center center,5,from(rgba(255,255,255,0.75)),to(rgba(255,255,255,0)));
+	background: 0 0 -moz-radial-gradient(bottom,cover,rgba(255,255,255,0.70) 0%,rgba(255,255,255,0) 80%);
+/* FF3.6+ */
+}
+
+/*--RED--*/
+.terminalRed {
+	background: #f41b16;
+/* Old browsers */
+	background: -moz-linear-gradient(top,#f41b16 0%,#fc7471 100%);
+/* FF3.6+ */
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#f41b16),color-stop(100%,#fc7471));
+/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,#f41b16 0%,#fc7471 100%);
+/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,#f41b16 0%,#fc7471 100%);
+/* Opera 11.10+ */
+	background: -ms-linear-gradient(top,#f41b16 0%,#fc7471 100%);
+/* IE10+ */
+	background: linear-gradient(top,#f41b16 0%,#fc7471 100%);
+/* W3C */
+}
+
+.terminalRed:active {
+	background: #972f2e;
+/* Old browsers */
+	background: -moz-linear-gradient(top,#972f2e 0%,#fc7471 100%);
+/* FF3.6+ */
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#972f2e),color-stop(100%,#fc7471));
+/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,#972f2e 0%,#fc7471 100%);
+/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,#972f2e 0%,#fc7471 100%);
+/* Opera 11.10+ */
+	background: -ms-linear-gradient(top,#972f2e 0%,#fc7471 100%);
+/* IE10+ */
+	background: linear-gradient(top,#972f2e 0%,#fc7471 100%);
+/* W3C */
+}
+
+.terminalRed .terminalShine {
+	position: relative;
+	top: -23px;
+	left: 5px;
+}
+
+.terminalRed .terminalGlow {
+	position: relative;
+	top: -22px;
+}
+
+.terminalRed .terminalGliph {
+	position: relative;
+	top: -6px;
+	left: 3px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #9b3a36;
+	z-index: 50;
+	opacity: 0;
+}
+
+/*--terminalYellow--*/
+.terminalYellow {
+	background: #f4a316;
+/* Old browsers */
+	background: -moz-linear-gradient(left,#f4a316 0%,#fcc371 100%);
+/* FF3.6+ */
+	background: -webkit-gradient(linear,left top,right top,color-stop(0%,#f4a316),color-stop(100%,#fcc371));
+/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,#f4a316 0%,#fcc371 100%);
+/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,#f4a316 0%,#fcc371 100%);
+/* Opera 11.10+ */
+	background: -ms-linear-gradient(left,#f4a316 0%,#fcc371 100%);
+/* IE10+ */
+	background: linear-gradient(left,#f4a316 0%,#fcc371 100%);
+/* W3C */
+	margin: 0 7px;
+}
+
+.terminalYellow:active {
+	background: #ae4f1e;
+/* Old browsers */
+	background: -moz-linear-gradient(top,#ae4f1e 0%,#fcc371 100%);
+/* FF3.6+ */
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#ae4f1e),color-stop(100%,#fcc371));
+/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,#ae4f1e 0%,#fcc371 100%);
+/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,#ae4f1e 0%,#fcc371 100%);
+/* Opera 11.10+ */
+	background: -ms-linear-gradient(top,#ae4f1e 0%,#fcc371 100%);
+/* IE10+ */
+	background: linear-gradient(top,#ae4f1e 0%,#fcc371 100%);
+/* W3C */
+}
+
+.terminalYellow .terminalShine {
+	position: relative;
+	top: -23px;
+	left: 5px;
+}
+
+.terminalYellow .terminalGlow {
+	position: relative;
+	top: -22px;
+}
+
+.terminalYellow .terminalGliph {
+	position: relative;
+	top: -7px;
+	left: 4px;
+	font-size: 24px;
+	color: #854322;
+	z-index: 50;
+	opacity: 0;
+	-webkit-transform: scaleY(1.5) scaleX(1.3);
+}
+
+/*--terminalGreen--*/
+.terminalGreen {
+	background: #4cae2e;
+/* Old browsers */
+	background: -moz-linear-gradient(top,#4cae2e 0%,#dafc71 100%);
+/* FF3.6+ */
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#4cae2e),color-stop(100%,#dafc71));
+/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,#4cae2e 0%,#dafc71 100%);
+/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,#4cae2e 0%,#dafc71 100%);
+/* Opera 11.10+ */
+	background: -ms-linear-gradient(top,#4cae2e 0%,#dafc71 100%);
+/* IE10+ */
+	background: linear-gradient(top,#4cae2e 0%,#dafc71 100%);
+/* W3C */
+}
+
+.terminalGreen:active {
+	background: #48752b;
+/* Old browsers */
+	background: -moz-linear-gradient(top,#48752b 0%,#dafc71 100%);
+/* FF3.6+ */
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#48752b),color-stop(100%,#dafc71));
+/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,#48752b 0%,#dafc71 100%);
+/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,#48752b 0%,#dafc71 100%);
+/* Opera 11.10+ */
+	background: -ms-linear-gradient(top,#48752b 0%,#dafc71 100%);
+/* IE10+ */
+	background: linear-gradient(top,#48752b 0%,#dafc71 100%);
+/* W3C */
+}
+
+.terminalGreen .terminalShine {
+	position: relative;
+	top: -22px;
+	left: 5px;
+}
+
+.terminalGreen .terminalGlow {
+	position: relative;
+	top: -22px;
+}
+
+.terminalGreen .terminalGliph {
+	position: relative;
+	top: -6px;
+	left: 3px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #25571d;
+	z-index: 50;
+	opacity: 0;
+}
+
+/* Horrible to do this for firefox */
+@-moz-document url-prefix() {
+	top: -4px;
+}
+
+.terminalYellow .terminalGliph {
+	top: -4px;
+	left: 3px;
+}
+
+.terminalGreen .terminalGliph {
+	position: relative;
+	top: -4px;
+}	
+}
+
+/*-----TITLE-----*/
+.terminalTitle {
+	float: left;
+	position: relative;
+	top: 4px;
+	width: 40%;
+	left: 30%;
+	font-family: "Myriad Pro", sans-serif;
+	font-size: 14px;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+	line-height: 14px;
+}
+
+.terminalFolder {
+	float: left;
+	margin-right: 5px;
+}
+
+.terminalFolder .terminalFolderTab {
+	width: 4px;
+	height: 2px;
+	background: #a4c5da;
+	border: 1px solid #728ea3;
+	border-bottom: none;
+	border-radius: 2px 2px 0 0;
+	-webkit-box-shadow: 0 -1px 0 #99b5c7 inset;
+	margin-left: 1px;
+	z-index: 5000;
+	margin-bottom: -1px;
+}
+
+.terminalFolder .terminalFolderBody {
+	width: 14px;
+	height: 10px;
+	border: 1px solid #6e8ba1;
+	background: #b8cfe0;
+/* Old browsers */
+	background: -moz-linear-gradient(top,#b8cfe0 0%,#86adc8 100%);
+/* FF3.6+ */
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#b8cfe0),color-stop(100%,#86adc8));
+/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,#b8cfe0 0%,#86adc8 100%);
+/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,#b8cfe0 0%,#86adc8 100%);
+/* Opera 11.10+ */
+	background: -ms-linear-gradient(top,#b8cfe0 0%,#86adc8 100%);
+/* IE10+ */
+	background: linear-gradient(top,#b8cfe0 0%,#86adc8 100%);
+/* W3C */
+	z-index: -50;
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.25) inset, 0 1px 0 rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.25) inset, 0 1px 0 rgba(0,0,0,0.2);
+}
+
+.terminalText {
+	font-family: Andale Mono, monospace;
+	line-height: 1em;
+	font-size: 13px;
+	float: left;
+	width: 100%;
+	min-height: 130px;
+	background: #000;
+	padding-left: 10px;
+	padding-top: 30px;
+	line-height: 1.5em;
+}
+
+.terminalText p {
+	color: #63de00 !important;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 13px;
+}
+
+@keyframes blink {
+	0% {
+		background: rgba(99,222,0,100);
+	}
+	
+	100% {
+		background: rgba(99,222,0,0);
+	}
+}
+
+@-webkit-keyframes blink {
+	0% {
+		background: rgba(99,222,0,100);
+	}
+	
+	100% {
+		background: rgba(99,222,0,0);
+	}
+}
+
+@-moz-keyframes blink {
+	0% {
+		background: rgba(99,222,0,100);
+	}
+	
+	100% {
+		background: rgba(99,222,0,0);
+	}
+}
+
+.cursor {
+	background: #63de00;
+	display: inline-block;
+	width: 11px;
+	height: 19px;
+	margin-bottom: -3px;
+}
+
+.terminalText:hover .cursor {
+	-webkit-animation-name: blink;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-name: blink;
+	-moz-animation-duration: 1.5s;
+	-moz-animation-iteration-count: infinite;
+}
+
+.terminalText p::-webkit-selection {
+	background: #0b209e;
+}
+
+.terminalText p::selection {
+	background: #0b209e;
+}
+
+.terminalText p::-moz-selection {
+	background: #0b209e;
+}
