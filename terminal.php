@@ -12,15 +12,17 @@
 defined('ABSPATH') or die("No script kiddies please!");
 if ( ! class_exists( '_WP_Editors' ) )
     require( ABSPATH . WPINC . '/class-wp-editor.php' );
- if (is_admin()) require_once(ABSPATH . 'wp-includes/pluggable.php');   
+if (is_admin()) require_once(ABSPATH . 'wp-includes/pluggable.php');   
 
-$settings = array('wpautop' => true, 'media_buttons' => true, 'quicktags' => true, 'textarea_rows' => '25');
-wp_editor( $distribution,'distribution', $settings);
+add_filter( 'tiny_mce_before_init', 	'my_format' );
+add_action( 'after_setup_theme', 		'terminal_css' );
+add_action( 'admin_head', 				'generate_terminal_button' );
+add_action( 'admin_enqueue_scripts', 	'terminal_css');
 
-
-    
-add_action('admin_head', 'generate_terminal_button');
-add_action('admin_enqueue_scripts', 'terminal_css');
+function my_format( $in ) {
+	$in['verify_html'] 	= false;
+	return $in;
+}
 
 function generate_terminal_button() {
     global $typenow;
@@ -50,4 +52,5 @@ function register_terminal_button($buttons) {
 
 function terminal_css() {
 	wp_enqueue_style('terminal', plugins_url('/terminal.css', __FILE__));
+	add_editor_style( plugins_url('/terminal.css', __FILE__) );
 }

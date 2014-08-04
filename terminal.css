@@ -311,6 +311,8 @@
 .terminalFolder {
 	float: left;
 	margin-right: 5px;
+	margin-left: 50px;
+	margin-top: 5px;
 }
 
 .terminalFolder .terminalFolderTab {
@@ -351,22 +353,17 @@
 
 .terminalText {
 	font-family: Andale Mono, monospace;
-	line-height: 1em;
+	line-height: 1.5em;
 	font-size: 13px;
+	color: #63de00 !important;
+	background: #000;
 	float: left;
 	width: 100%;
 	min-height: 130px;
-	background: #000;
 	padding-left: 10px;
 	padding-top: 30px;
-	line-height: 1.5em;
-}
-
-.terminalText p {
-	color: #63de00 !important;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	font-size: 13px;
 }
 
 @keyframes blink {
@@ -399,7 +396,7 @@
 	}
 }
 
-.cursor {
+.terminalCursor {
 	background: #63de00;
 	display: inline-block;
 	width: 11px;
@@ -407,7 +404,7 @@
 	margin-bottom: -3px;
 }
 
-.terminalText:hover .cursor {
+.terminalText:hover .terminalCursor {
 	-webkit-animation-name: blink;
 	-webkit-animation-duration: 1.5s;
 	-webkit-animation-iteration-count: infinite;

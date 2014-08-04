@@ -46,11 +46,11 @@
 '    </div>\n'                                                  +
 '    <div class="terminalText">\n'                              +
 '        <p>\n'                                                 +
-'        $ <span>' + e.data.command + '</span>\n'               +
-'        $ <span class="terminalCursor"></span>\n'              +
+'        <div>$ ' + e.data.command + '</div>\n'             +
+'        <div class="terminalCursor">$ </div>\n'            +
 '        </p>\n'                                                +
 '    </div>\n'                                                  +
-'</div>');
+'</div><br>');
                     }
                 });
             }
